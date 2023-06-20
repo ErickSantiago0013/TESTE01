@@ -1,0 +1,57 @@
+/* Estilo para o botão de voltar */
+.button-back {
+    background-color: #0099CC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+  
+  
+  /* Estilo para ocultar a coluna ID */
+  .hidden {
+    display: none;
+  }
+  
+  /* Estilo para o ícone de pessoa */
+  .fa-user {
+    margin-right: 5px;
+  }
+  
+  /* Estilo para a tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para o cabeçalho da tabela */
+  th {
+    background-color: #0099CC;
+    color: white;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Estilo para as células da tabela */
+  td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilo para a primeira célula da tabela (código) */
+  td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Estilo para as células da tabela quando o cursor passar por cima */
+  tr:hover {
+    background-color: #E0E0E0;
+  }
+  

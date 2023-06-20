@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastros</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- Outros elementos do cabeçalho -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+          <li><a href="/cadastrar"><i class="fas fa-plus"></i> Cadastrar</a></li>
+          <li><a href="/excluir"><i class="fas fa-trash"></i> Excluir</a></li>
+          <li><a href="/editar"><i class="fas fa-edit"></i> Editar</a></li>
+          <li>
+            <a href="#"><i class="fas fa-chart-bar"></i> Relatórios</a>
+            <ul class="submenu">
+              <li><a href="/relatorios/cadastros">Cadastros</a></li>
+              <li><a href="/relatorios/exclusoes">Exclusões Realizadas</a></li>
+              <li><a href="/relatorios/edicoes">Edições</a></li>
+            </ul>
+          </li>
+          <li><a href="/configuracoes"><i class="fas fa-cog"></i> Configurações</a></li>
+          <li><a href="/sair"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

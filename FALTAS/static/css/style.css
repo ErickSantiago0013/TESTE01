@@ -1,0 +1,108 @@
+/* Estilos para index.html e cadastros.html */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  /* Estilos para index.html */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos para cadastros.html */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    border: 1px solid #333;
+  }
+  
+  /* Estilo para interação com a tabela */
+  table tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+/* Estilos básicos do menu */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f5ff; /* Cor de fundo azul suave */
+}
+
+.navbar li {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Estilos do submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-top: 5px;
+  min-width: 150px;
+}
+
+.submenu li {
+  display: block;
+}
+
+.submenu a {
+  padding: 5px;
+}
+
+/* Estilos do submenu quando aberto */
+.navbar li:hover .submenu {
+  display: block;
+}
+
+/* Estilos ao passar o mouse */
+.navbar a:hover {
+  background-color: #a7d0ff; /* Cor de fundo azul mais clara ao passar o mouse */
+  color: #fff; /* Cor do texto branco ao passar o mouse */
+}

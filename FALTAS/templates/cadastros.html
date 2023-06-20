@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastros</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/cadastros.css') }}">
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+  <button class="button-back" onclick="window.location.href='/'">
+    <i class="fas fa-arrow-left"></i>Voltar
+  </button>
+  <table>
+    <thead>
+      <tr>
+        <th class="hidden">ID</th>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Cargo</th>
+        <th>Loja</th>
+        <th>Salário</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for empregado in empregados %}
+      <tr>
+        <td class="hidden">{{ empregado.id }}</td>
+        <td>{{ empregado.codigo }}</td>
+        <td>
+          <i class="fas fa-user"></i>{{ empregado.nome }}
+        </td>
+        <td>{{ empregado.cargo }}</td>
+        <td>{{ empregado.loja }}</td>
+        <td>{{ empregado.salario }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
